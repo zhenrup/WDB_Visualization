@@ -1,0 +1,8 @@
+CO2 Emissions vs. Energy Use vs. PM2.5 Air Pollution,Bar Chart,Line Chart,Scatter Chart,Report
+PM2.5 Air Pollution vs. Forest Area,Bar Chart,Line Chart,Scatter Chart,Report
+Ratio CO2 Emissions and GDP per Capita,Bar Chart,Line Chart,Scatter Chart,Report
+Average Forest Area,Pie Chart,Report
+Average of Government Expenditure on Education,Pie Chart,Report
+Ratio of Hospital Beds and Current Health Expenditure,Bar Chart,Line Chart,Scatter Chart,Report
+Current Health Expenses per Capita vs. Infant Mortality Rate,Bar Chart,Line Chart,Scatter Chart,Report
+Ratio of Government Expenditure on Education vs. Current Health Expenditure,Bar Chart,Line Chart,Scatter Chart,Report
