@@ -270,9 +270,7 @@ public class Selection {
 		int totalCheck = selectedAnalysis.size();		//number of analysis
 		//add all available year into a new list
 		for (int i = 0; i < totalCheck; i++) {
-			//System.out.println(comboDB);
-			System.out.println(selectedCountry);
-			//System.out.println(selectedAnalysis);
+
 			int[] validYears = comboDB.get(selectedCountry).get(selectedAnalysis.get(i));
 			//if there is no available year for an analysis, the year range is invalid
 			if(validYears == null) {
@@ -498,18 +496,7 @@ public class Selection {
 		return af.getTitles();
 	}
 	
-/**	public void addViewers(Viewers view) {
-		selectedViewers.add(e)
-	}**/
-	//test printing case
 
-	
-	/**
-	 * prints the of selected analysis as a test
-	 */
-	/**public String getCountryFull() {
-		return countryFullName;
-	}**/
 	public void printAnalysisList() {
 		for(int i = 0; i < selectedAnalysis.size(); i++) {
 			System.out.println(selectedAnalysis.get(i));

@@ -363,13 +363,7 @@ public class MainUI extends JFrame {
 		//add viewer button pressed
 		addView.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent event) {
-				//JButton button = (JButton) event.getSource();
-				//selectedViewer = button.getLabel();
-				
-				//addViewers(selection);
-				//JPanel viewers = new JPanel();
-				//if(viewersList.size()==viewerCount) JOptionPane.showMessageDialog(instance, "Maximum viewers displayed, remove to add more");
-				
+		
 				Viewers newView = selection.generateViewer((String)viewsList.getSelectedItem());
 				viewersList.add(newView);
 				
@@ -378,11 +372,8 @@ public class MainUI extends JFrame {
 					west.setLayout(new GridLayout(1,1));
 					for(Viewers v : viewersList) {
 						west.setPreferredSize(new Dimension(getContentPane().getWidth()-east.getWidth(), getContentPane().getHeight()-north.getHeight()-south.getHeight()));
-						//JScrollPane jsp = new JScrollPane(v);
-						///jsp.setPreferredSize(new Dimension((int) west.getSize().getWidth(), (int) west.getSize().getHeight()));
 						west.add(v);
 						
-						//renderViewer(v, 1, 1);
 					}
 					west.repaint();
 				}
@@ -413,8 +404,7 @@ public class MainUI extends JFrame {
 				else {
 					JOptionPane.showMessageDialog(new JFrame(), "Max number of viewers reached. Please remove a viewer before adding another one.");
 				}
-				//west.add(viewersList.get(0));
-				//instance.add(viewersList.get(0));
+
 				pack();
 			}
 		});
@@ -435,10 +425,7 @@ public class MainUI extends JFrame {
 					west.setLayout(new GridLayout(1,1));
 					for(Viewers v : viewersList) {
 						west.setPreferredSize(new Dimension(getContentPane().getWidth()-east.getWidth(), getContentPane().getHeight()-north.getHeight()-south.getHeight()));
-						//JScrollPane jsp = new JScrollPane(v);
-						///jsp.setPreferredSize(new Dimension((int) west.getSize().getWidth(), (int) west.getSize().getHeight()));
 						west.add(v);
-						//renderViewer(v, 1, 1);
 					}
 					west.repaint();
 				}
@@ -448,7 +435,6 @@ public class MainUI extends JFrame {
 					west.setLayout(new GridLayout(1,2));
 					for(Viewers v : viewersList) {
 						renderViewer(v, 1, 2);
-						//west.add(v);
 					}
 				}
 				
@@ -470,8 +456,7 @@ public class MainUI extends JFrame {
 				else {
 					JOptionPane.showMessageDialog(new JFrame(), "Max number of viewers reached. Please remove a viewer before adding another one.");
 				}
-				//west.add(viewersList.get(0));
-				//instance.add(viewersList.get(0));
+
 				instance.pack();
 			}
 		});
